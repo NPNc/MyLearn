@@ -1,0 +1,6 @@
+* Stream trong java8
+ là 1 đối tượng dùng trong collection và array nhằm tối ưu hóa, , đại diện cho 1 chuỗi các phần tử hỗ trợ các hđ tổng hợp tuần tự và song song.
+ 2 kiểu steam:
+   stream(): xử lý tuần tự
+   parallelStream(): xử lý song song
+

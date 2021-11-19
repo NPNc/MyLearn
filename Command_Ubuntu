@@ -1,0 +1,41 @@
+Ubuntu
+
+
+1. Elastic search
+  * Install Elastic search:
+     sudo apt install apt-transport-https
+     wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
+     echo "deb https://artifacts.elastic.co/packages/7.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-7.x.list
+     sudo apt update
+     sudo apt install elasticsearch
+  * Run:
+     sudo systemctl daemon-reload
+     sudo systemctl enable elasticsearch.service
+     sudo systemctl start elasticsearch.service
+  * Reset:
+     sudo systemctl restart elasticsearch.service
+     sudo systemctl stop elasticsearch.service
+  * Check status:
+     service elasticsearch status
+
+  * Config:
+     sudo vim /etc/elasticsearch/elasticsearch.yml
+
+2. RabbitMQ
+   * Install:
+    curl -s https://packagecloud.io/install/repositories/rabbitmq/rabbitmq-server/script.deb.sh | sudo bash
+    sudo apt update
+    sudo apt install rabbitmq-server
+   * Run:
+    sudo systemctl enable rabbitmq-server
+    systemctl status  rabbitmq-server.service
+    systemctl is-enabled rabbitmq-server.service
+   * Enable Management Dashboard
+     sudo rabbitmq-plugins enable rabbitmq_management
+     sudo ss -tunelp | grep 15672
+   * Add User:
+     sudo rabbitmqctl add_user admin StrongPassword
+     sudo rabbitmqctl set_user_tags admin administrator
+     rabbitmqctl change_password user strongpassword
+   * vhost:
+     - add: sudo rabbitmqctl add_vhost qa1
