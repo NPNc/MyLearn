@@ -1,0 +1,8 @@
+- Phỏng Vấn Java
+
+- PV Spring
+ 1. Vòng đời của Bean, Bean scope
+ 2. Phân biệt @Controler, @RestController.
+    @AdviceControler là gì.
+    Phân biệt @Compoment, @Service
+ 2. Fetch typr (lazy, eager)
