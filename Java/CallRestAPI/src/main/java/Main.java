@@ -10,10 +10,6 @@ import org.springframework.http.ResponseEntity;
 
 public class Main {
 
-    private static String HOST = "http://da-insurance-dev-1131818953.ap-southeast-1.elb.amazonaws.com";
-    private static String LINK = "/insurance-core/internal/policy/insurance-policy-info?country=";
-    private static String country = "SG";
-    private static String userId = "343701";
     public static final ObjectMapper mapper = new ObjectMapper();
 
     public static void main(String[] args) throws Exception {
