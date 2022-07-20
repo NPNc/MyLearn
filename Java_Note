@@ -1,6 +1,21 @@
 * Stream trong java8
- là 1 đối tượng dùng trong collection và array nhằm tối ưu hóa, , đại diện cho 1 chuỗi các phần tử hỗ trợ các hđ tổng hợp tuần tự và song song.
- 2 kiểu steam:
-   stream(): xử lý tuần tự
-   parallelStream(): xử lý song song
+ + là 1 đối tượng dùng trong collection và array nhằm tối ưu hóa, , đại diện cho 1 chuỗi các phần tử hỗ trợ các hđ tổng hợp tuần tự và song song.
+ + không lưu trữ phần tử. Nó chỉ thực hiện tính toán ( filter or count...)
+ + là immutable, các hđ không làm thay đổi dữ liệu, chỉ trả về 1 stream mới. Các phần tử của luồng chỉ truy câp duy nhất trong vòng đời của stream.
+    stream sẽ không dùng lại đc. không dùng index để truy xuất đc.
 
+ + 2 kiểu steam:
+    stream(): xử lý tuần tự
+    parallelStream(): xử lý song song
+
+ + 1 số thứ trong stream:
+   - skip(n): loại bỏ n phần tử đầu tiên trong stream
+   - limit(n): cắt giảm kích thước, không vượt quá n phần tử
+   - map(): ánh xạ đến kết quả tương ứng
+   - sorted(): sắp xếp theo 1 thứ tự ( do tự define)
+   - forEach(): duyệt từng phần tử
+   - collect(): chuyển sang 1 collection khác
+
+* Map.Entry Interface trong Java giúp bạn làm việc với một Map Entry.
+Phương thức entrySet( ) được khai báo bởi Map Interface trả về một Set chứa các Map Entry.
+Mỗi phần tử Set này là một đối tượng Map.Entry trong Java
