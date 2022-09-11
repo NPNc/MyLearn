@@ -1,0 +1,6 @@
+kubeclt get svc
+kubeclt get pods
+kubeclt get svc
+
+kubectl get pod -o wide
+kubectl describe pod ms-account
