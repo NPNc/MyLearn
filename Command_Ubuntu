@@ -39,3 +39,9 @@ Ubuntu
      rabbitmqctl change_password user strongpassword
    * vhost:
      - add: sudo rabbitmqctl add_vhost qa1
+     
+     
+3. ps aux | grep tomcat
+4. kill -9 <pid>
+5. 
+5. 
