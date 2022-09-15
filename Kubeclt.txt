@@ -4,3 +4,4 @@ kubeclt get svc
 
 kubectl get pod -o wide
 kubectl describe pod ms-account
+kubectl logs -l app=ms-wallet -f --tail 1000
