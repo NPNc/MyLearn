@@ -1,1 +1,4 @@
 
+1. Tại sao lại cần dùng Hebernate
+ - Dùng vì cần map, định nghĩa giữa project và CSDL thông qua entity, thư viện sẽ giúp ta thực hiện các công việc liên quan đến kết nối CSDL. 
+ - JDBC 
