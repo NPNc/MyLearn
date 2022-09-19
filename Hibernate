@@ -21,3 +21,7 @@
 
 5. Phân biệt giữa JPA và Hibernate
 JPA là tập các giao diện (interfaces), qui chuẩn, định nghĩa. còn Hibernate thực hiện cài đặt (implements) các giao diện đó, định nghĩa đó.
+
+6. Fetch Type
+- FetchType.LAZY tức là mặc định không lấy ra các đối tượng liên quan nhưng bên trong transaction nếu gọi getListObj dữ liệu vãn có. và nó sẽ không có sẵn
+- fetch = FetchType.EAGER lấy các đối tượng liên quan và lưu vào list trong đối tượng 
