@@ -1,4 +1,23 @@
+1. Hibernate là gì
+- Là thư viện ORM dùng để map các obj với hệ quản trị cơ sở dữ liệu quan hệ, thực hiện các KN OOP với dữ liệu quan hệ.
+- Session Factory: là Interface giúp tạo session kết nối DB bằng cấu hình trong configuration. Mỗi DB ứng với 1 session factory.
+- transaction: dùng để bảo đảm tính toàn vẹn của phiên làm việc với CSDL. Nếu có lỗi, các tác vụ thực hiện trước sẽ thất bại.
 
-1. Tại sao lại cần dùng Hebernate
- - Dùng vì cần map, định nghĩa giữa project và CSDL thông qua entity, thư viện sẽ giúp ta thực hiện các công việc liên quan đến kết nối CSDL. 
- - JDBC 
+2. Tại sao lại cần dùng Hebernate
+  - Object Mapping: Có thể sử dụng Entity để mapping 1 cách tự động không pải map thủ công các trưởng của bảng với Java Obj.
+  - Sử dụng HQL: cung cấp các câu lệnh truy vấn như SQL, nhưng xịn hơn là hiểu được các KN OOP: Kế thừa, đa hình và liên kết. Ngoài ra, Sử dụng Hibernate là độc lập với
+  CSDL, không cần thay đổi câu lệnh khi mà thay đổi hệ quản trị CSDL mà ta chỉ cần cấu hình lại config.
+  - Lazy loading, Loại bỏ try catch blocks, Quản lí commit/rollback transaction, Có Hibernate caching.
+  
+
+3. Các Trạng thái của Entity
+ - New: khởi tạo chưa được lưu xuống CSDL
+ - Persistent: Đã đc ánh xạ, Khi có sự tác động nào lên Entity sẽ đc ghi nhận và ghi vào CSDL theo lệnh session flush
+ - Detached
+ - Removed: ở trạng thái này thì thực chất chưa bị xóa cho đến khi được gọi flush
+ 
+4. Làm thế nào để chúng ta có thể thêm criteria vào truy vấn SQL
+- Sử dụng phương thức: Session.createCriteria(), 
+
+5. Phân biệt giữa JPA và Hibernate
+JPA là tập các giao diện (interfaces), qui chuẩn, định nghĩa. còn Hibernate thực hiện cài đặt (implements) các giao diện đó, định nghĩa đó.
