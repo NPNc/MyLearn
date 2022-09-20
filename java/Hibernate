@@ -2,6 +2,7 @@
 - Là thư viện ORM dùng để map các obj với hệ quản trị cơ sở dữ liệu quan hệ, thực hiện các KN OOP với dữ liệu quan hệ.
 - Session Factory: là Interface giúp tạo session kết nối DB bằng cấu hình trong configuration. Mỗi DB ứng với 1 session factory.
 - transaction: dùng để bảo đảm tính toàn vẹn của phiên làm việc với CSDL. Nếu có lỗi, các tác vụ thực hiện trước sẽ thất bại.
+- Các thành phần chính của Hibernate là: session, configuration và query.
 
 2. Tại sao lại cần dùng Hebernate
   - Object Mapping: Có thể sử dụng Entity để mapping 1 cách tự động không pải map thủ công các trưởng của bảng với Java Obj.
@@ -25,3 +26,6 @@ JPA là tập các giao diện (interfaces), qui chuẩn, định nghĩa. còn H
 6. Fetch Type
 - FetchType.LAZY tức là mặc định không lấy ra các đối tượng liên quan nhưng bên trong transaction nếu gọi getListObj dữ liệu vãn có. và nó sẽ không có sẵn
 - fetch = FetchType.EAGER lấy các đối tượng liên quan và lưu vào list trong đối tượng 
+
+7.  Session
+- là công cụ chính để thực hiện các HD trong Hibernate fw. để tạo, phát hành thực hiện các các câu truy vấn dựa trên SQL và HQL.
