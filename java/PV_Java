@@ -1,8 +1,25 @@
-- Phỏng Vấn Java
+1. Singleton trong Java 
+- là 1 Design pattern, đảm bảo chỉ duy nhất một instance đc tao ra và nó sẽ cung cấp method để có thể truy xuất đc instance duy nhất đó ở mọi nơi trong chương trình.
+- Có 9 cách để tạo singleton => cơ bản nhất là khởi tạo bằng private contructor
+2. Các Nguyên lí cơ bản:
+ - Kế thừa
+ - Đóng gói
+ - Trừa tượng
+ - Đa hình
+3. Array và ArrayList:
+Array: 
+   - Không chứa giá trị của các kiểu dữ liệu khác nhau.
+   - Kích thước phải xác đinh tại thời điểm khai báo
+   - Cần chỉ định chỉ mục để thêm phần tử
+   - có thể chứa kiểu nguyên thủy
+Arraylist: ngược lại
 
-- PV Spring
- 1. Vòng đời của Bean, Bean scope
- 2. Phân biệt @Controler, @RestController.
-    @AdviceControler là gì.
-    Phân biệt @Compoment, @Service
- 2. Fetch typr (lazy, eager)
+4.    abs                                    và                              interface:
+ - Không hỗ trợ đa kế thừa                   ||       Một class có thể implements nhiều interface
+ - Có thể định nghĩa phương thức, property   ||       Không thể định nghĩa code xử lí (java 8 có thể dùng default method và static method)
+ - Có thể chứa constructor                   ||       Ko có constructor
+ - Có thể định phạm vi cập nhập              ||       Luôn là public
+ 
+5.
+
+  
