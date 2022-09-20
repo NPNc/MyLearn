@@ -1,1 +1,13 @@
 
+1. Bean trong Spring và các scopes:
+- Bean là đối tượng trong IoC container.
+- Có 4 loại scopes:
+  + Singteton
+  + Prototype
+  + Request
+  + Sesson
+  + Global-session
+2.Xử lí ngoại lệ trong Spring
+- Controller based:  có thể định nghĩa xử lí ngoại lệ trong các lớp điều khiện, chú thích các phương thức đó bằng annotation @ExceptionHandler
+- Global Exception Handler: Khi xử lí ngoại lệ toàn cục có thể sử dụng @ControllerAdvice
+- 
