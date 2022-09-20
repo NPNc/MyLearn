@@ -1,1 +1,40 @@
 
+1. Union
+- Dùng để nối kết quả của >= 2 câu lệch Select mà không trả về giá trị trùng lặp, Select pải thỏa mãn:
+ + Cùng số cột
+ + Cùng kiểu dữ liệu
+ + cùng trật tự
+
+2. Transaction trong SQL:
+- 4 tiêu chuẩn
+  + bảo toàn: đảm bảo tất cả các lệnh trong nhóm lệnh được thành công nếu không transaction sẽ hủy bỏ hết thao tác trước đó và khôi phục l
+  + nhất quán: đảo bảo CSDL thay đổi chính xác các trạng tháu khi transaction thực hiện thành công
+  + độc lập : các transaction hoạt động độc lập với nhau
+  + bền bỉ: đảm bảo rằng kết quả của một transaction được commit vẫn tồn tại trong trường hợp lỗi hệ thống
+ - Các lệnh xử lí: 
+COMMIT - để lưu các thay đổi.
+ROLLBACK - để khôi phục lại các thay đổi.
+SAVEPOINT - tạo ra các điểm trong transaction để ROLLBACK.
+SET TRANSACTION - thiết lập các thuộc tính cho transaction.
+
+3. Sự khác biệt giữa Stored Procedure và Function
+- Procedure có thể trả về giá trị zero, một hoặc nhiều giá trị. Trong khi Function phải trả về một giá trị duy nhất (có thể là bảng).
+- Các Function chỉ có thể có các tham số đầu vào cho nó trong khi Procedure có thể có các tham số đầu vào hoặc đầu ra.
+- Function có thể được gọi từ Stored Procedure trong khi Stored Procedure không thể được gọi từ Function.
+// Các thủ tục không thể được sử dụng trong câu lệnh SELECT trong khi hàm có thể được nhúng trong câu lệnh SELECT. Bởi vì một thủ tục có thể trả về nhiều tập kết quả nên nó không phù hợp để sử dụng trong câu lệnh SELECT.
+// Các thủ tục lưu trữ không thể được sử dụng trong các câu lệnh WHERE / HAVING / SELECT trong khi hàm thì có thể.
+- Một ngoại lệ có thể được xử lý bằng try-catch trong thủ tục lưu trữ, đối với hàm thì không thể.
+- Có thể sử dụng Transactions trong thủ tục lưu trữ, với hàm thì không thể.
+
+4. Index trong SQL
+Index trỏ tới địa chỉ dữ liệu trong một bảng, nó same same mục lục của quyển sách bạn đọc, nó giúp truy vấn trở nên nhanh chóng như việc bạn xem mục lục.
+Index  gồm:
+  Cột Search Key: chứa bản sao các giá trị của cột được tạo Index
+  Cột Data Reference: chứa con trỏ trỏ đến địa chỉ của bản ghi có giá trị cột index tương ứng
+  
+Không nên sử dụng trong các bảng nhỏ, ít bản ghi.
+Không nên sử dụng Index trong bảng mà các hoạt động UPDATE, INSERT xảy ra thường xuyên với tần suất lớn.
+Không nên sử dụng cho các cột mà chứa một số lượng lớn giá trị NULL.
+Không nên dùng Index cho các cột mà thường xuyên bị sửa đổi.
+
+5. Partition trong SQL
