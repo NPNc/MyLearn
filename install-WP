@@ -1,0 +1,6 @@
+apt install apache2
+systemctl status apache2
+
+
+apt install mariadb-server mariadb-client
+ mysql_secure_installation
