@@ -1,3 +1,5 @@
 (jenkins)integrate->Plan->code->build->test->integrate
 integrate->deploy->monitor->integrate(Jenkins)
 
+Jenkins is a Continuous Integration tool that allows continuous development, test and deployment of newly created codes.
+(Jenkins là một công cụ tích hợp liên tục cho phép phát triển, kiểm tra và triển khai liên tục các mã mới được tạo.)
