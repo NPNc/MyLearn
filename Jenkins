@@ -1,1 +1,3 @@
+(jenkins)integrate->Plan->code->build->test->integrate
+integrate->deploy->monitor->integrate(Jenkins)
 
