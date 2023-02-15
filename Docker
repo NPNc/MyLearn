@@ -1,1 +1,14 @@
 docker system prune : clear all in docker
+
+Cấu trúc docker file:
+INSTRUCTION arguments
+- Instruction là tên của các chỉ thị có truong Dockerfile, Mỗi chỉ thị thực hiện 1 nhi vụ nhất định dược Docker quy đinh. 
+Khi khai báo các chỉ thị này pải được viết bằng chữ In Hoa.
+- 1 dockèile bắt buộc pải bắt đàu bằng chỉ thị FROM để khai báo đâu là image sẽ được sử dụng làm nền để xây dựng nên image của bạn
+- aguments là 1 phần nội dùng của các chỉ thị quyết định chỉ thị sẽ làm gì
+
+
+*Chỉ thị FROM là bắt buộc và phải được để lên phía trên cùng của Dockerfile.*
+
+
+
