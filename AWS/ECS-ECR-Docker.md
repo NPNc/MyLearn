@@ -7,6 +7,7 @@ https://www.youtube.com/watch?v=aSd1S-4jQ-Q
 - Download CSV user
 https://582184503127.signin.aws.amazon.com/console
 npnc/v$AsZT7^
+AKIAYPDHGQ5LWNAJOI7C / 0v9u63HjKWgNBSaawpix6SlNyfZtCcLVui/iSiFJ
 
 ssh -i "npnc-ecs.pem" ec2-user@ec2-122-248-211-209.ap-southeast-1.compute.amazonaws.com
 
