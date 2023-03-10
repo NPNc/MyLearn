@@ -8,6 +8,7 @@ https://www.youtube.com/watch?v=aSd1S-4jQ-Q
 https://582184503127.signin.aws.amazon.com/console
 npnc/v$AsZT7^
 
+ssh -i "npnc-ecs.pem" ec2-user@ec2-122-248-211-209.ap-southeast-1.compute.amazonaws.com
 
 
 Thá»±c hÃ nh AWS/ECS
