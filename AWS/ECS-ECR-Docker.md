@@ -34,8 +34,8 @@ COPY html /usr/share/nginx/html
 $ mkdir html
 $ vi html/index.html
 <html>
-<head><title>Tin hoc that la don gian</title></head>
-<body><h1>Xin chao tin hoc that la don gian</h1></body>
+<head><title>Test NPNc</title></head>
+<body><h1>Xin chao</h1></body>
 </html>
 
 
@@ -43,21 +43,21 @@ $docker build -t [Image Name]:tag .
 	->docker build -t tinhocthatladongian:v1 .
 
 - AWS ECR Login
-aws ecr get-login --no-include-email --region eu-west-2
+aws ecr get-login --no-include-email --region ap-southeast-1
 
 
 - Táº¡o repository lÃªn AWS/ECR(Amazon Elastic Container Registry)
 aws ecr create-repository --repository-name [Repository Name] --region eu-west-2
-->aws ecr create-repository --repository-name tinhocthatladongian --region eu-west-2
+->aws ecr create-repository --repository-name npnc --region ap-southeast-1
 
 
 - Táº¡o tag version docker image
 docker tag [Image Name]:tag [Repository ULR] Ä‘Ã£ táº¡o ra á»Ÿ bÆ°á»›c trÃªn]
-->docker tag tinhocthatladongian:v1 251123607109.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian
+->docker tag test:v1 582184503127.dkr.ecr.ap-southeast-1.amazonaws.com/npnc
 
 - Push lÃªn AWS/ECR
 docker push [Repository ULR]
-->docker push 251123607109.dkr.ecr.eu-west-2.amazonaws.com/tinhocthatladongian
+->docker push 582184503127.dkr.ecr.ap-southeast-1.amazonaws.com/npnc
 
 - Táº¡o Task trÃªn AWC/ECS
 - Táº¡o Clusters trÃªn AWC/ECS
