@@ -1,5 +1,7 @@
 docker system prune : clear all in docker
 
+sudo docker run --name mysql-container -v ~/mysql-data:/var/lib/mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=your_password -d mysql : Setup mysql run 3306
+
 Cấu trúc docker file:
 INSTRUCTION arguments
 - Instruction là tên của các chỉ thị có truong Dockerfile, Mỗi chỉ thị thực hiện 1 nhi vụ nhất định dược Docker quy đinh. 
