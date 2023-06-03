@@ -1,4 +1,0 @@
-rootProject.name = 'CallRestAPI'
-include 'src'
-include 'apps'
-
