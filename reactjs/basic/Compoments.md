@@ -49,6 +49,4 @@ export default function ShoppingList() {
 
 ## Question
 
-<mark>
-1.What is the difference between components, elements, and instances?
-</mark>
+1. What is the difference between components, elements, and instances?
